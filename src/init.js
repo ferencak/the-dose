@@ -1,4 +1,5 @@
 import { Launcher } from './launcher.js'
+import { SceneManager } from './SceneManager.js'
 
 class Init {
 
@@ -7,3 +8,4 @@ class Init {
 }
 
 new Init()
+new SceneManager()

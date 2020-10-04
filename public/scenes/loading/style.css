@@ -1,0 +1,39 @@
+@keyframes sharpen {
+  from {
+   -webkit-filter: blur(25px);
+   filter: blur(25px);
+  }
+  to {
+   -webkit-filter: blur(0);
+   filter: blur(0);
+  }
+}
+#loading {
+  display: -webkit-inline-box;
+  background: black;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  padding: 0;
+  margin: 0;
+  -moz-animation: sharpen .5s both;
+  -webkit-animation: sharpen .5s both;
+  animation: sharpen .5s both;
+}
+
+.studio-logo {
+  font-size: 59px;
+  font-family: 'BalooBhai';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.studio-logo>span {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -40px;
+
+}
