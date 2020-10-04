@@ -6,15 +6,16 @@ require('electron-reload')(__dirname, {
 require("@babel/register");
 
 
-
 function createWindow () {
   const win = new BrowserWindow({
     fullscreen: true,
     frame: false,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true
     }
   })
+
   win.loadFile(__dirname + '/public/index.html')
   win.webContents.openDevTools()
 }

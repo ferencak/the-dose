@@ -1,10 +1,33 @@
 <html>
   <head>
     <title>The Dose</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
   </head>
   <body>
     <div class="content">
+      Version 1.0
+      <div class="header">
+        The Dose
+      </div>
 
+      <div class="menu">
+        <div class="button">
+          <a href="">Start Game</a>
+        </div>
+
+        <div class="button">
+          <a href="">Options</a>
+        </div>
+
+        <div class="button">
+          <a href="" onclick="const remote = require('electron').remote; let w = remote.getCurrentWindow(); w.close();">Exit Game</a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div id="startGame">Start Game</div>
+        <div id="options">Options</div>
+      </div>
     </div>
   </body>
   <script type="module" src="../src/init.js"></script>
