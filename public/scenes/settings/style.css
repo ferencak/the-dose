@@ -1,0 +1,12 @@
+.center-top {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -90px;
+}
+.settings {
+  font-size: 13px;
+  width: 79px;
+  background: #0a0a15;
+  display: inline-block;
+}

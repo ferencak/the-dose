@@ -15,7 +15,6 @@ function createWindow () {
       enableRemoteModule: true
     }
   })
-
   win.loadFile(__dirname + '/public/index.html')
   win.webContents.openDevTools()
 }
