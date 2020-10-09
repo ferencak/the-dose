@@ -1,0 +1,43 @@
+.menu {
+  width: 26%;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  font-size: 53px;
+  color: white;
+}
+
+.button {
+  background: linear-gradient(45deg, #c53cffd1, #c031fd7a);
+  display:inline-block
+}
+
+
+.center {
+  position: absolute;
+  top: 390px;
+}
+.main-button {
+  margin: 10px;
+}
+
+.button-right {
+  position: absolute;
+  left: 400%;
+  background: linear-gradient(45deg, #2c2142d1, #40286d7a);
+}
+
+.button-left {
+  left: -270%;
+  position: relative;
+}

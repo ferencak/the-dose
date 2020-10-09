@@ -1,14 +1,19 @@
 <script src="./assets/js/particles.js"></script>
+<link rel="stylesheet" href="./scenes/main-menu/style.css" />
 
 <div id="particles-js"></div> 
 <section class="content">
   
-  <span class="version"></span>
+  <span class="version">Version 0.0.2 (DEV)</span>
   <h1 class="logo">The Dose</h1>
 
   <div class="menu">
-    <p class="button">Start Game</p>
-    <p class="button" onclick="sceneManager.set('settings')">Options</p>
-    <p onclick="const remote = require('electron').remote; let w = remote.getCurrentWindow(); w.close();" class="button exit">Exit Game</p>
+    <p onclick="sceneManager.set('start-game')" class="button main-button">Start Game</p>
+    <p class="button main-button">Create Game</p>
+    <div class="center">
+      <p class="button button-right" onclick="sceneManager.set('settings')">Options</p>
+      <p onclick="const remote = require('electron').remote; let w = remote.getCurrentWindow(); w.close();" class="button exit button-left">Exit</p>
+    </div>
   </div>
+  
 </section>

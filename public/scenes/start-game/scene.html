@@ -1,0 +1,52 @@
+<script src="./assets/js/particles.js"></script>
+<link rel="stylesheet" href="./scenes/start-game/style.css" />
+
+<div id="particles-js"></div> 
+<section class="content">
+  
+  <span class="version">Version 0.0.2 (DEV)</span>
+  <h1 class="logo">The Dose</h1>
+
+  <div class="menu">
+    <p id="btn-browse" class="button main-button active">Browse</p>
+    <p id="btn-private" class="button main-button">Private</p>
+    <div class="center">
+      <p onclick="sceneManager.set('main-menu')" class="button exit button-left">Back</p>
+    </div>
+  </div>
+
+  <div class="game-content">
+    <div id="browse">
+      <p class="title">Browse online games</p>
+      <div class="servers-table">
+
+      </div>
+    </div>
+    <div id="private" class="hidden">
+      <p class="title">Browse online games</p>
+      <div class="server-key">
+        <span>
+          SECRET: <input type="text"/>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script>
+  let $ = require("jquery")
+  $("#btn-browse").click(() => {
+    
+    $("#private").addClass("hidden")
+    $("#browse").removeClass("hidden")
+    $("#btn-private").removeClass("active")
+    $("#btn-browse").addClass("active")
+  })
+  $("#btn-private").click(() => {
+    $("#browse").addClass("hidden")
+    $("#private").removeClass("hidden")
+    $("#btn-browse").removeClass("active")
+    $("#btn-private").addClass("active")
+  })
+</script>

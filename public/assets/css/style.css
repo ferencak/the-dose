@@ -23,15 +23,30 @@ body {
   
 @keyframes itemActive {
   0% {
-   border-color: transparent;
+    border-color: transparent;
   }
   50% {
-   border-color: #c7b4ff;
+    border-color: #c7b4ff;
+    color: #c7b4ff;
   }
   100% {
     border-color: transparent;
   }
 }
+
+@keyframes backItemActive {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #c75a5ab5;
+    color: #c75a5ab5;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
 @keyframes sharpen {
   from {
    -webkit-filter: blur(25px);
@@ -86,7 +101,7 @@ body{
   
 .button{
   display: block;
-  border: 3px solid transparent;
+  border: 3px solid #101217b5;
   border-radius: 21px;
   padding: 19px;
   background: #3b2a5f;
@@ -100,10 +115,15 @@ body{
 }
 
 .button:hover {
-  color: #c7b4ff;
   -moz-animation: itemActive 1.2s infinite;
   -webkit-animation: itemActive 1.2s infinite;
   animation: itemActive 1.2s infinite;
+}
+
+.exit:hover {
+  -moz-animation: backItemActive 1.2s infinite;
+  -webkit-animation: backItemActive 1.2s infinite;
+  animation: backItemActive 1.2s infinite;
 }
 
 a{
@@ -138,7 +158,7 @@ a:hover{
 }
 
 .exit {
-  background: #101217;
+  background: #101217!important;
 }
 
 

@@ -21,6 +21,9 @@ export default class SceneManager {
       case 'settings':
         $("#🎬").load('./scenes/settings/scene.html')
         break;
+      case 'start-game':
+        $("#🎬").load('./scenes/start-game/scene.html')
+        break;
       default: 
         this.set('loading')
         this.load()
